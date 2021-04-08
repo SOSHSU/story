@@ -5,10 +5,37 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel = "stylesheet" href = "style.css">
-    <title>Document</title>
+    <title>Interactive Story</title>
 </head>
 <body>
-    
+    <div class = "display"></div>
+        <div class = "block">
+            <div class = "text"></div>
+        </div>
+    <button class = "button" id = "startB" onclick = "question1()">Start</button>
+    <button class = "button" id = "restartB" onclick = "reload()">Restart</button>
+
+    <button class = "button" id = "buttonQ1-1" onclick = "dead1()">Make Fire</button>
+    <button class = "button" id = "buttonQ1-2" onclick = "question2()">Sleep on a tree</button>
+    <div class = "answer2">
+        <button style="margin: 0px 5vw;" class = "button" id = "buttonQ2-1" onclick = "question3()">Left</button>
+        <button style="margin: 0px 5vw;" class = "button" id = "buttonQ2-2" onclick = "dead2()">Forward</button>
+        <button style="margin: 0px 5vw;" class = "button" id = "buttonQ2-3" onclick = "dead2()">Right</button>
+    </div>
+    <div class = "answer3">
+        <button style="margin: 0px 5vw;" class = "button" id = "buttonQ3-1" onclick = "dead3()">Run!</button>
+        <button style="margin: 0px 5vw;" class = "button" id = "buttonQ3-2" onclick = "dead3()">Play with it</button>
+        <button style="margin: 0px 5vw;" class = "button" id = "buttonQ3-3" onclick = "question4()">Walk away</button>
+    </div>
+    <div class = "answer4">
+        <button style="margin: 0px 3vw;" class = "button" id = "buttonQ4-1" onclick = "dead5()">Sleep on the tree</button>
+        <button style="margin: 0px 3vw;" class = "button" id = "buttonQ4-2" onclick = "question5()">Sleep inside the horse</button>
+        <button style="margin: 0px 3vw;" class = "button" id = "buttonQ4-3" onclick = "dead5()">Keep walking</button>
+    </div>
+    <div class = "answer5">
+        <button style="margin: 0px 3vw;" class = "button" id = "buttonQ5-1" onclick = "dead6()">Don't Follow</button>
+        <button style="margin: 0px 3vw;" class = "button" id = "buttonQ5-2" onclick = "surviveEnd()">Follow</button>
+    </div>
     <script src="mechanic.js"></script>
 </body>
 </html>
