@@ -13,7 +13,7 @@ var song7 = new Audio("audio/yt1s.com - Beethoven  Symphony No 5 1hour version.m
 var song8 = new Audio("audio/end music.mp3")
 var song9 = new Audio("audio/yt1s.com - Dark Souls  You Died  Sound Effect.mp3")
 var song10 = new Audio("audio/game-over-04-sound-effect-31945801.mp3")
-setTimeout(() => {song1.play()}, 2000);
+setTimeout(() => {song1.play()}, 1000);
 display.innerHTML = `<img class = "picture" src = ${pic1}>`
 document.querySelector(".display").classList.toggle("pictureSize")
 
