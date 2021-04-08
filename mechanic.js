@@ -6,14 +6,14 @@ var survivePic = "https://www.rocketmortgage.com/resources-cmsassets/RocketMortg
 var song1 = new Audio("audio/Explosion+4.mp3")
 var song2 = new Audio("audio/yt1s.com - Night Sound Effect for sleeping.mp3")
 var song3 = new Audio("audio/Relaxing Forest Nature Sounds-Soothing Birds Singing-Natural Sound of Water Relaxation.mp3")
-var song4 = new Audio("audio/bear-roar.mp3")
+var song4 = new Audio("audio/Bear Growling-SoundBible.com-2376031.mp3")
 var song5 = new Audio("audio/yt1s.com - VSTRun away Horror music.mp3")
 var song6 = new Audio("audio/yt1s.com - Snowstorm Sound Effect  Winter Storm  Blizzard.mp3")
 var song7 = new Audio("audio/yt1s.com - Beethoven  Symphony No 5 1hour version.mp3")
 var song8 = new Audio("audio/end music.mp3")
 var song9 = new Audio("audio/yt1s.com - Dark Souls  You Died  Sound Effect.mp3")
 var song10 = new Audio("audio/game-over-04-sound-effect-31945801.mp3")
-song1.play()
+setTimeout(() => {song1.play()}, 2000);
 display.innerHTML = `<img class = "picture" src = ${pic1}>`
 document.querySelector(".display").classList.toggle("pictureSize")
 
@@ -97,7 +97,7 @@ function question3()
 {
     song3.pause()
     song4.play()
-    song5.play()
+    setTimeout(() => {song5.play()}, 2000);
     document.querySelector(".text").innerText = "Walking for a few hours. Suddenly, you see a bear. It is 5 meters away and it stares at you. What do you do?"
     var pic4 = "https://www.wkar.org/sites/wkar/files/201304/Small%20Bear%20growl%20Clash_1270928.jpg"
     display.innerHTML = `<img class = "picture" src = ${pic4}>`
