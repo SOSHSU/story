@@ -49,6 +49,7 @@ function question1()
 {
     song1.pause()
     song2.play()
+    document.querySelector(".title").classList.toggle("appear")
     document.querySelector(".text").innerText = "After you wake up, you find out the night comes. What do you do?"
     document.querySelector("#startB").classList.toggle("appear")
     var pic2 = "https://upload.wikimedia.org/wikipedia/commons/8/8b/Night_jungle_trek-_looks_un-nerving%21_%2811464532486%29.jpg"
